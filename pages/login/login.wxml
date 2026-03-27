@@ -1,0 +1,22 @@
+<!--pages/login/login.wxml-->
+<view class="container">
+  <!-- 学号 -->
+  <view class="field">
+  <text class="field-label">学号</text>
+  <input class="input" type="text" value="{{studentLd}}" bindinput="onStudentIdInput"/>
+  </view>
+
+  <!-- 密码 -->
+  <view class="field">
+  <text class="field-label">密码</text>
+  <input class="input" type="password" value="{{password}}" bindinput="onPasswordInput" password="true"/>
+  </view>
+
+  <!-- 教务系统账号 -->
+  <view class="tip-field">
+    <text class="tip-jiaowu">教务系统账号</text>
+  </view>
+
+  <!-- 登录按钮 -->
+  <button clas="login-btn" hover-class="btn-hover" bind:tap="login">登录</button>
+</view>

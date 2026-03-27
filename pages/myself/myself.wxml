@@ -1,0 +1,26 @@
+<!--pages/myself/myself.wxml-->
+<view class="container">
+  <view class="status-bar" style="height: {{statusBarHeight}}px;"></view>
+
+  <!-- 个人信息卡片+帮助 -->
+  <view class="ueser-card">
+    <view class="user-info">
+      <image src="" mode=""/>
+
+      <view class="info-text">
+        <text class="name">{{userInfo.name}}</text>
+        <text class="student-id">学号：{{userInfo.studentId}}</text>
+      </view>
+    </view>
+
+    <view class="help-btn" bindtap="onHelpFeedback">
+        <image></image>
+        <text>帮助与反馈</text>
+    </view>
+  </view>
+
+  <!-- 我的交易模块 -->
+  <view class="trade-module">
+  
+  </view>
+</view>
